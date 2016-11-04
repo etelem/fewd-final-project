@@ -1,7 +1,8 @@
-<!DOCTYPEhtml>
+<!DOCTYPE html>
 <html>
 	
 <head>	
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
 <link href="https://fonts.googleapis.com/css?family=Merriweather:700,700i|Oswald:700|Source+Sans+Pro:400,700" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="css/style.css">
 
@@ -53,16 +54,68 @@
 	
 
 	<div id="section3">
+		<h5><button>Click to try our Culture Generator!</button></h5>
 		
-		<div id="sbox">
-		<h5>Culture Generator</h5>
-		<!-- <img src="images/background.jpg" alt="background"> -->
-		
+	<div id="genr-box">
 		<ul id="generator">
 
-		<li id="osize">
-		<button>Organizational Size</button>
-		<input type="string" name="org-size" placeholder="small/medium/large">
+		<li id="li-osize">
+		
+			<form>
+				<button>Organizational Size</button>
+					<select id="org-size">
+
+					<option value="small">small</option>
+					<option value="medium">medium</option>
+					<option value="large">large</option>
+
+					</select>
+
+			</form>
+		</li>
+		
+		<li id="li-budget">
+			<form>
+				<button>Budget</button>
+				<select id="budget">
+
+				<option value="small">small</option>
+				<option value="medium">medium</option>
+				<option value="large">large</option>
+
+				</select>
+
+			</form>
+		</li>
+		
+		
+		<li id="li-frequency">
+			<form>
+				<button>Frequency</button>
+				<select id="frequency">
+
+				<option value="once">once</option>
+				<option value="semi-often">semi-often</option>
+				<option value="often">often</option>
+
+				</select>
+
+			</form>
+		</li>
+		
+		<div class="gen-btns">
+		<button class="submit">Submit</button><button class="reset">Reset</button>
+		</div>
+		
+		<p id="results">...you should do this...</p>
+
+	
+	</ul>
+	</div>
+	</div>
+
+
+	<!-- 	<input type="string" name="org-size" placeholder="small/medium/large">
 		</li>
 
 		<li id="budget">
@@ -75,12 +128,10 @@
 		<input type="string" name="frequency" placeholder="once/semi-often/often"></input>
 		</li>
 		</ul>
+		 -->
 		
-		</div>
 
-		<p>...you should do this...</p>
-
-	</div>
+	
 
 	<div id="blog">
 
@@ -102,7 +153,7 @@
 		</container>
 
 		<div>
-		<p>email us at <a href="info.culturemag@gmail.com">info.culturemag@gmail.com</a></p>
+		<p>email us at <a href="mailto:info.culturemag@gmail.com">info.culturemag@gmail.com</a></p>
 		</div>
 
 
@@ -117,9 +168,9 @@
 
 	</footer>
 
-	
+	<script src="js/main.js"></script>
 </body>
-
+</html>
 
 
 

@@ -94,11 +94,8 @@ nav li {
 	border-top: solid 5px orange;
 	background-color: #121212;
 	color: white;
-	/*height: 500px;*/
 	float: right;
-	padding-bottom: 20px;
-	height: 650px;
-
+	padding-bottom: 100px;
 }
 
 #section2 h2 {
@@ -207,15 +204,22 @@ color: orange;
 	font-size: 35px;
 }
 
+#genr-box {
+	opacity: 0;
+	/*border: black 1px solid;*/
+
+}
+
 #section3 input {
 	font-size: 30px;
 	border: solid 5px orange;
 	margin: 10px;
 
+
 }
 
 #section3 button {
-	font-size: 30px;
+	font-size: 25px;
 
 }
 
@@ -228,10 +232,32 @@ color: orange;
 	padding: 0px 60px;
 }
 
+.submit {
+	margin-bottom: 45px;
+	margin: 10px;
+	border: 1px solid orange;
+}
+
+.reset {
+	margin: 10px;
+	border: 1px solid orange;
+
+}
+
+.gen-btns {
+	padding: 25px 0px 50px 0px;
+
+}
+
 #section3 p {
 	text-transform: uppercase;
 	font-size: 25px;
 	margin-top: 35px;
+	padding-bottom: 25px;
+	border: solid 1px orange;
+	text-align: center;
+	padding: 25px;
+	margin: 0px 150px;
 }
 
 /*blog post*/
@@ -243,6 +269,16 @@ color: orange;
 	background-attachment: fixed;
 	background-position: left;
 }
+
+.posts li {
+	display: none;
+}
+
+.posts li.active {
+	display: block;
+}
+
+
 
 /*footer*/
 
@@ -292,7 +328,7 @@ footer li {
 
 
 
-/*DATA & RESOURCES*/
+/*DATA */
 
 
 #pikto {
@@ -301,79 +337,62 @@ width: 65%;
 border: solid 1px orange;
 }
 
-/*RESOURCES*/
-
-#resources {
-	background-color: white;
-	height: 1000px;
-}
-
-h4 { 
-font-size: 30px;
-color: orange;
-text-align: left;
-padding-left: 60px; 
-padding-top: 50px;
-
-}
-
-li {
-	list-style: none;
-}
 
 
-#boxes {
-	float: right;
-	list-style: none;
-	margin: 30px;
-	margin-top: 100px;
-}
 
-#boxes button {
-	background-color: orange;
-	box-shadow: 0px 0px 5px gray;
-	padding: 5px 250px;
-	border-style: ridge;
-	font-size: 30px;
-}
-
-#websites {
-	background-color: #d3d3d3;
-	border: solid 1px white;
-	float: left;
-	width: 50%;
-	padding-bottom: 40px;
-}
-
-#podcasts {
-	float: left;
-	background-color: #d3d3d3;
-	border: solid 1px white;
-	width: 50%;
-	padding-bottom: 120px;
-}
-
-#books {
-	float: left;
-	background-color: #d3d3d3;
-	border: solid 1px white;
-	width: 50%;
-	padding-bottom: 40px;
-}
-
-
-#surveys {
-	float: left;
-	background-color: #d3d3d3;
-	border: solid 1px white;
-	width: 50%;
-	padding-bottom: 80px;
-}
 
 /* CONTACT */
 
 #contact {
-	height: 800px;
+text-align: center;
+	padding-bottom: 100px;
 }
 
+#email a:link,
+#email a:visited {
+	padding-bottom: 100px;
+	margin-bottom: 200px;
+}
+
+#sign-up {
+	padding: 50px 0px;
+}
+
+
+/* Blog */
+
+#blog {
+	text-align: center;
+	padding-top: 300px;
+}
+
+#blog button {
+	float: right;
+	margin-right: 170px;
+
+}
+
+#left-arrow  {
+	float: left;
+}
+
+#right-arrow {
+	float: right;
+}
+
+#post1 {
+	height: 800px;
+	background-image: url("../images/background.jpg");
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: left;
+}
+
+#post2 {
+	height: 800px;
+	background-image: url("../images/background.jpg");
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: left;
+}
 

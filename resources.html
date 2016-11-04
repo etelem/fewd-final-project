@@ -1,9 +1,12 @@
-<!DOCTYPEhtml>
+<!DOCTYPE html>
 <html>
 	
 <head>	
+
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
 <link href="https://fonts.googleapis.com/css?family=Merriweather:700,700i|Oswald:700|Source+Sans+Pro:400,700" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/resources.css">
 
 </head>
 
@@ -28,60 +31,79 @@
 
 
 
+<!-- resources categories-->
 
 <div id="resources">
 
-<h4>Let's universalize the importance of workplace culture...</h4>
-<ul id=boxes>
+<h4>Let's universalize the importance of <span>workplace culture...</span></h4>
 
+<p>Culture Mag is a resource for you to find out more about workplace culture. Below are websites, podcasts, books, and surveys that can help you to positively influence culture within your organization!</p>
+
+
+<img src="images/down-arrow.gif" alt="down-arrow">
+<img src="images/down-arrow.gif" id="down-arrow2" alt="down-arrow">
+
+<ul id="boxes">
+	
 	<li id="websites">
-		<button>Websites</button>
-			<ul>
-			<li>CultureIQ</li>
-			<li>The Energy Project</li>
-			<li>Limeade</li>
-			<li>Exubrancy</li>
-			<li>http://www.gallup.com/poll/180404/gallup-daily-employee-engagement.aspx</li>
-			</ul>
+		<h5>Websites<span>.</span> <img src="images/learn-more.png" id="learn-more" alt="learn-more"></h5>
 	</li>
 
 
 	<li id="podcasts">
-		<button>Podcasts</button>
-			<ul>
-			<li>The Future of Work Podcast - Jacob Morgan - Futurist/Writer
-			<li></li>
-			</ul>
-
+		<h5>Podcasts<span>.</span> <img src="images/learn-more.png" id="learn-more" alt="learn-more"></h5>
 	</li>
 
 
 
 	<li id="books">
-		<button>Books</button>
-			<ul>
-			<li>Work Rules! Insights from inside Google that will transform how you live and lead	Laszlo Bock	Former SVP of People at Google</li>
-			<li>he Way we're Working Isn't Working	Tony Schwartz	founder of the Energy Project</li>
-			<li></li>
-			</ul>
+		<h5>Books<span>.</span> <img src="images/learn-more.png" id="learn-more" alt="learn-more"></h5>
+
 	</li>
 
 
 
 	<li id="surveys">
-		<button>Surveys</button>
-			<ul>
-			<li>Gallup</li>
-			<li>UET</li>
-			</ul>
+		<h5>Surveys<span>.</span> <img src="images/learn-more.png" id="learn-more" alt="learn-more"></h5>
 	</li>
 
 
 </ul>
+
+<!-- category lists -->
+
+		<div id="lists">
+		<ul id="website-list">
+
+			<li> <a href= "https://cultureiq.com">CultureIQ</a> helps organzations improve their culture</li>
+			<li> <a href= "https://theenergyproject.com">The Energy Project</a></li>
+			<li> <a href="http://www.limeade.com">Limeade</a> is an innovative corporate wellness company</li>
+			<li> <a href="http://www.exubrancy.com">Exubrancy</a> office wellness</li>
+			<li> <a href="http://www.gallup.com/home.aspx?g_source=logo">Gallup</a> engagement statistics </li>
+			<li> <a href="https://www.themuse.com">The Muse</a> resource for job seekers, emphasizes culture</li>
+		</ul>
+
+
+		<ul id="podcasts-list">
+			<li>The Future of Work Podcast - Jacob Morgan - Futurist/Writer
+			<li></li>
+		</ul>
+
+		<ul id="books-list">
+			<li>Work Rules! Insights from inside Google that will transform how you live and lead	Laszlo Bock	Former SVP of People at Google</li>
+			<li>he Way we're Working Isn't Working	Tony Schwartz	founder of the Energy Project</li>
+			<li></li>
+		</ul>
+
+
+		<ul id="surveys-list">
+			<li>Gallup</li>
+			<li>UET</li>
+		</ul>
+		</div>
 </div>
 
-
-	<footer>
+	<footer id="footer-resources">
 		
 		<container id="social-media">
 		<!-- <p>Author's contact:</p> -->
@@ -92,7 +114,7 @@
 		</container>
 
 		<div>
-		<p>email us at <a href="info.culturemag@gmail.com">info.culturemag@gmail.com</a></p>
+		<p>email us at <a href="mailto:info.culturemag@gmail.com">info.culturemag@gmail.com</a></p>
 		</div>
 
 
@@ -107,6 +129,7 @@
 
 	</footer>
 
+	<script src="js/main.js"></script>
 
 
 </body>
