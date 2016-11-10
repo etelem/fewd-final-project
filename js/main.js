@@ -66,7 +66,7 @@ else {
 
 
 $(".reset").on("click", function(){
-$("#results").text("...YOU SHOULD DO THIS...");
+$("#results").text("");
 })
 //use .html - than use "" and <ul>
 
@@ -160,6 +160,7 @@ $("#left-arrow").on("click", function(){
 // Resources
 
 
+
 $(document).ready(function(){
 $("#website-list").hide();
 $("#podcasts-list").hide();
@@ -168,6 +169,8 @@ $("#surveys-list").hide();
 
 });
 
+
+
 $("#websites img").on("click", function(){
 $("#website-list").toggle();
 // $("#websites").animate({
@@ -175,6 +178,9 @@ $("#website-list").toggle();
 // } 2000);
 
 // });
+
+
+
 
 });
 // $("#website-list").css("width", "1000px");
@@ -198,4 +204,5 @@ $("#surveys img").on("click", function(){
 $("#surveys-list").toggle();
 
 });
+
 

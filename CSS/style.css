@@ -49,7 +49,7 @@ nav li a:link,
 nav li a:visited {
 	float: right;
 	text-decoration: none;
-	color: #2A5DB0
+	color: #2A5DB0;
 	}
 
 nav li {
@@ -187,60 +187,96 @@ color: orange;
 }*/
 
 #section3 {
-	padding-top: 100px;
-/*	background-image: url("../images/other1.jpg");
+	margin-bottom: 100px;
+}
+
+#shape {
+
+	background-image: url("../images/flag.png");
 	background-repeat: no-repeat;
-	background-size: contain;*/
+	background-size: contain;
+	/*padding: 0px 20px;*/
+	color: white;
+	padding-bottom: 200px;
+	padding-top: 30px;
+	float: left;
+	width: 30%;
+	padding-right: 120px;
+
 }
 
 #section3 h5 {
-	padding: 50px;
-	font-size: 30px;
+/*	padding: 50px;
+*/	font-size: 30px;
 	text-transform: uppercase;
+
 	
 }
 
 #generator {
+	margin-top: 100px;
 	font-size: 35px;
+	list-style: none;
+
 }
 
 #genr-box {
-	opacity: 0;
-	/*border: black 1px solid;*/
-
+	opacity: .2;
+	/*background-color: #33A1DE;*/
+	border: 10px solid orange;
+	width: 33.33%;
+	text-align: center;
+	margin-left: 450px;
 }
 
-#section3 input {
+/*#section3 input {
 	font-size: 30px;
 	border: solid 5px orange;
 	margin: 10px;
-
-
-}
+}*/
 
 #section3 button {
 	font-size: 25px;
-
+	/*background-color: black;*/
+/*	color: white;
+*/	color: #2A5DB0;
 }
 
-#budget button {
-	padding: 0px 80px;
-
+#section3 button span {
+	color: orange;
+	font-size: 35px;
 }
 
-#frequency button {
-	padding: 0px 60px;
+/* option/value */
+
+label {
+	margin: 20px;
 }
+
+#org-size {
+	font-size: 20px;
+}
+
+#budget {
+	font-size: 20px;
+}
+
+#frequency {
+	font-size: 20px;
+}
+
+
+/* submit & reset buttons */
 
 .submit {
 	margin-bottom: 45px;
 	margin: 10px;
-	border: 1px solid orange;
+	/*border: 1px solid orange;*/
 }
 
 .reset {
 	margin: 10px;
-	border: 1px solid orange;
+	/*border: 1px solid orange;*/
 
 }
 
@@ -249,34 +285,17 @@ color: orange;
 
 }
 
-#section3 p {
+#section3 #results {
 	text-transform: uppercase;
 	font-size: 25px;
 	margin-top: 35px;
-	padding-bottom: 25px;
-	border: solid 1px orange;
+/*	padding-bottom: 200px;
+*/	/*border: solid 1px orange;*/
 	text-align: center;
-	padding: 25px;
 	margin: 0px 150px;
 }
 
-/*blog post*/
 
-#blog {
-	height: 800px;
-	background-image: url("../images/background.jpg");
-	background-size: cover;
-	background-attachment: fixed;
-	background-position: left;
-}
-
-.posts li {
-	display: none;
-}
-
-.posts li.active {
-	display: block;
-}
 
 
 
@@ -316,7 +335,6 @@ footer li a:visited {
 	text-decoration: none;
 	color: white;
 	margin-top: 100px;
-
 }
 
 footer li {
@@ -359,28 +377,114 @@ text-align: center;
 }
 
 
-/* Blog */
+/* Blog main page */
+
+	#blog-main-page {
+	border-top: orange 1px solid;
+	text-align: center;
+	margin-top: 100px;
+	padding-top: 50px;
+	padding-bottom: 100px;
+	margin-bottom: 100px;
+
+}
+
+#blog-main-page h4{
+	font-size: 20px;
+	padding-bottom: 20px;
+	margin-top: 30px;
+}
+
+#blog-main-page img {
+	padding-bottom: 100px;
+}
+
+#blog-main-page p {
+	padding-bottom: 10px;
+}
+
+	#blog-main-page a:link,
+	#blog-main-page a:visited {
+		
+
+		text-decoration: none;
+		color: #2A5DB0;
+	/*	position: left;*/
+		margin-top: 150px;
+		font-size: 20px;
+		text-align: center;
+
+		
+		
+
+}
+
+
+
+/*Blog - blog.html -- blog post*/
+
+#culture-pic2 {
+	height: 800px;
+	background-image: url("../images/background.jpg");
+	background-size: cover;
+	width: 100%;
+	background-attachment: fixed;
+}
 
 #blog {
 	text-align: center;
-	padding-top: 300px;
+	margin-top: 100px;
+	padding-top: 50px;
+	/*border-top: 1px orange solid;*/
 }
 
-#blog button {
+.posts {
+	color: #2A5DB0;
+	width: 67%;
+	/*	border-top: orange 1px solid;
+	padding-top: 20px;
+	*/
+}
+
+.posts li {
+	display: none;
+}
+
+.posts li.active {
+	display: block;
+	text-align: left;
+	margin-bottom: 50px;
+	margin-left: 230px;
+	width: 100%;
+
+}
+
+
+#right-arrow {
+	float: right;
+}
+	
+#left-arrow {
+	float: left;
+}
+
+/*#blog button {
 	float: right;
 	margin-right: 170px;
 
-}
+}*/
 
-#left-arrow  {
+
+/*
+#blog img {
 	float: left;
 }
 
 #right-arrow {
 	float: right;
-}
+}*/
 
-#post1 {
+/*#post1 {
 	height: 800px;
 	background-image: url("../images/background.jpg");
 	background-size: cover;
@@ -394,5 +498,5 @@ text-align: center;
 	background-size: cover;
 	background-attachment: fixed;
 	background-position: left;
-}
+}*/
 
