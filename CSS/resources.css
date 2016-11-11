@@ -140,6 +140,12 @@ padding-bottom: 50px;
 	transition: .2s;
 }
 
+#lists a:link,
+#lists a:visited
+{
+	text-decoration: none;
+}
+
 #lists:hover {
 	font-size: 30px;
 	color: orange;

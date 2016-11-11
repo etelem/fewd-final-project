@@ -6,7 +6,7 @@ $(document).ready(function(){
 });
 
 
-$("#section3 h5").on("click", function() {
+$("#section3 button").on("click", function() {
 console.log("blah")
 	$("#genr-box").animate({
 	"opacity": "1",
@@ -123,8 +123,14 @@ var lastPost;
 // check if a "next" post exists before updating everything
 // if (nextPost) { }
 $("#right-arrow").on("click", function(){
+	
+	// if current post if the last child then show the first one
 	// update next post
-	nextPost = currentPost.next();
+	if (currentPost.is(":last-child")) {
+		nextPost = $('.posts li').first();
+	} else {
+		nextPost = currentPost.next();
+	}
 
 	// add class active to next post
 	nextPost.addClass("active");
@@ -138,9 +144,16 @@ $("#right-arrow").on("click", function(){
 
 });
 
+
 $("#left-arrow").on("click", function(){
+
+	if (currentPost.is(":first-child")) {
+		lastPost = $(".posts li").last();
+	}
 	// update next post
-	lastPost = currentPost.prev();
+	else {
+		lastPost = currentPost.prev();
+	}
 
 	// add class active to next post
 	lastPost.addClass("active");
@@ -151,6 +164,7 @@ $("#left-arrow").on("click", function(){
 
 	// update current post
 	currentPost = lastPost;
+
 
 });
 
@@ -172,6 +186,7 @@ $("#surveys-list").hide();
 
 
 $("#websites img").on("click", function(){
+$("#lists ul").hide();
 $("#website-list").toggle();
 // $("#websites").animate({
 // 	"opacity": .5,
@@ -189,6 +204,7 @@ $("#website-list").toggle();
 
 
 $("#podcasts img").on("click", function(){
+$("#lists ul").hide();
 $("#podcasts-list").toggle();
 });
 
@@ -196,11 +212,13 @@ $("#podcasts-list").toggle();
 
 
 $("#books img").on("click", function(){
+$("#lists ul").hide();
 $("#books-list").toggle();
 
 });
 
 $("#surveys img").on("click", function(){
+$("#lists ul").hide();
 $("#surveys-list").toggle();
 
 });

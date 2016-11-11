@@ -191,30 +191,35 @@ color: orange;
 }
 
 #shape {
-
 	background-image: url("../images/flag.png");
 	background-repeat: no-repeat;
-	background-size: contain;
+	background-size: 100%;
 	/*padding: 0px 20px;*/
 	color: white;
-	padding-bottom: 200px;
-	padding-top: 30px;
 	float: left;
-	width: 30%;
-	padding-right: 120px;
-
+	font-size: 20px;
+	width: 500px;
+	padding-bottom: 250px;
+/*	padding-top: 70px;
+*/	padding-right: 160px;	
+	padding-top: 10px;
+	padding-left: 10px;
 }
+
+
 
 #section3 h5 {
 /*	padding: 50px;
 */	font-size: 30px;
 	text-transform: uppercase;
+	/*padding: 0px 35px;
+	margin-right: 25px;*/
 
 	
 }
 
 #generator {
-	margin-top: 100px;
+	/*margin-top: 100px;*/
 	font-size: 35px;
 	list-style: none;
 
@@ -227,6 +232,7 @@ color: orange;
 	width: 33.33%;
 	text-align: center;
 	margin-left: 450px;
+	background-color: #d3d3d3;
 }
 
 /*#section3 input {
@@ -243,8 +249,8 @@ color: orange;
 }
 
 #section3 button span {
-	color: orange;
-	font-size: 35px;
+	/*color: orange;*/
+/*	font-size: 35px;*/
 }
 
 /* option/value */
@@ -300,6 +306,10 @@ label {
 
 
 /*footer*/
+
+footer a:hover {
+	background-color: #2A5DB0;
+}
 
 footer {
 	padding: 100px;
@@ -362,18 +372,74 @@ border: solid 1px orange;
 /* CONTACT */
 
 #contact {
-text-align: center;
-	padding-bottom: 100px;
+	margin-top: 100px;
+	text-align: center;
+/*	padding-bottom: 100px;
+*/
+
+}
+
+/*#email img {
+float: left;
+}
+*/
+#email p {
+	font-size: 20px;
+
+
 }
 
 #email a:link,
 #email a:visited {
-	padding-bottom: 100px;
-	margin-bottom: 200px;
+	/*margin-bottom: 100px;*/
+	font-size: 20px;
+	text-decoration: none;
+	color: #2A5DB0;
+	
 }
 
 #sign-up {
-	padding: 50px 0px;
+	text-align: center;
+	margin: 50px 0px;
+	margin-bottom: 300px;
+	font-size: 20px;
+	width: 75%;
+	margin-left: 120px;
+}
+
+input {
+	color: orange;
+	font-size: 17px;
+}
+
+#sign-up p {
+	padding-top: 50px;
+	border-top: orange 1px dashed;
+	margin-bottom: 15px;
+}
+
+/*#first-name {
+	width: 33.33%;
+}
+
+#last-name {
+	width: 33.33%
+}
+
+#email {
+	width: 33.33%;
+}*/
+
+span {
+	color: orange;
+	font-size: 40px;
+}
+
+.ML-submit {
+	font-size: 25px;
+	margin-top: 15px;
+	
+
 }
 
 
