@@ -13,6 +13,10 @@ console.log("blah")
 	// "width": "300px",
 	// "height": "300px",
 	}, 2000);
+	$("#click").animate({
+		"opacity": "0",
+
+	}, 2000);
 });
 
 
@@ -34,20 +38,37 @@ $(".submit").on("click", function(event){
 
 // starting with size/medium/large others 'small' and 'once'
 
-if (size === "small" && budget === "small" && frequency === "once") {
-		$("#results").html("<ul> <li>free meditation apps</li> <li>happy hour</li> <li>ted talks</li> </ul>");
+
+if (budget === "small") {
+		$("#results").html("<ul> <span><li>TRY THESE:</li></span>  <li>-potluck</li> <li>-define employee career paths</li> <li>-team newsletter</li> <li>-training (leverage exisiting employee expertise)</li><li>-free meditation apps</li> <li>-transparent feedback/open communication</li> <li>-happy hour</li> <li>-watch ted talks</li> <li>-recognition of milestones</li> </ul>");
 		console.log("blah");
 	}
 
-else if (size === "medium" && budget === "small" && frequency === "once") {
-		$("#results").text("free meditation apps," + " happy hour," + " ted talks");
+else if (budget === "medium") {
+		$("#results").html("<ul> <span><li>TRY THESE:</li></span> <li>-purhcase meditation apps</li> <li>-yoga & wellness programs (see resources page)</li> <li>-mliestone gifts</li> <li>-seasonal gifts</li> <li>-company gear (business cards, mugs, shirts etc.)<li></ul>");
 		console.log("blah");
 	}
 
-else if (size === "large" && budget === "small" && frequency === "once") {
-		$("#results").text("free meditation apps," + " happy hour," + " ted talks");
+else if (budget === "large") {
+		$("#results").html("<ul> <span><li>TRY THESE:</li></span> <li>-online recognition platform (points based or otherwise)</li> <li>-team getaways</li> <li>-paid happy hours/meals</li> <li>-speakers</li> <li>-discounted class & gym memberships</li> </ul>");
 		console.log("blah");
 	}
+
+
+// if (size === "small" && budget === "small" && frequency === "once") {
+// 		$("#results").html("<ul> <span><li>TRY THESE:</li></span>  <li>potluck</li> <li>define employee career paths</li> <li>team newsletter</li> <li>training (leverage exisiting employee expertise)</li><li>free meditation apps</li> <li>happy hour</li> <li>ted talks</li> </ul>");
+// 		console.log("blah");
+// 	}
+
+// else if (size === "medium" && budget === "small" && frequency === "once") {
+// 		$("#results").html("<ul> <li>TRY:</li> <li>free meditation apps</li> <li>happy hour</li> <li>ted talks</li> </ul>");
+// 		console.log("blah");
+// 	}
+
+// else if (size === "large" && budget === "small" && frequency === "once") {
+// 		$("#results").html("<ul> <li>TRY:</li> <li>free meditation apps</li> <li>happy hour</li> <li>ted talks</li> </ul>");
+// 		console.log("blah");
+// 	}
 
 // size as medium
 
